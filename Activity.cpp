@@ -36,3 +36,4 @@ const string &Activity::getNote() const {
 void Activity::setNote(const string &note) {
     Activity::note = note;
 }
+i

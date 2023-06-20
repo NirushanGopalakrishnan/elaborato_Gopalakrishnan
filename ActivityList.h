@@ -13,7 +13,7 @@ class ActivityList {
 
     private:
         std::vector<Activity> activities;
-};
+};i
 
 
 #endif //ELABORATO_GOPALAKRISHNAN_ACTIVITYLIST_H

@@ -40,7 +40,7 @@ private:
         struct Time end;
         string title;
         string note;
-};
+};i
 
 
 #endif //ELABORATO_GOPALAKRISHNAN_ACTIVITY_H
