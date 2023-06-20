@@ -4,6 +4,7 @@
 
 #include "Activity.h"
 
+
 const Time &Activity::getStart() const {
     return start;
 }

@@ -9,8 +9,23 @@
 
 using namespace std;
 
+struct Time{
+    int day;
+    int month;
+    int year;
+    int hour;
+    int minutes;
+};
+
 class Activity {
 public:
+    const Time &getStart() const;
+
+    void setStart(const Time &start);
+
+    const Time &getAnEnd() const;
+
+    void setAnEnd(const Time &anEnd);
 
     const string &getTitle() const;
 
@@ -20,17 +35,9 @@ public:
 
     void setNote(const string &note);
 
-    const Time &getStart() const;
-
-    void setStart(const Time &start);
-
-    const Time &getAnEnd() const;
-
-    void setAnEnd(const Time &anEnd);
-
 private:
-        Time start;
-        Time end;
+        struct Time start;
+        struct Time end;
         string title;
         string note;
 };
