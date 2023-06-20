@@ -1,0 +1,14 @@
+//
+// Created by thabr on 20/06/2023.
+//
+
+#ifndef ELABORATO_GOPALAKRISHNAN_ACTIVITYLOG_H
+#define ELABORATO_GOPALAKRISHNAN_ACTIVITYLOG_H
+
+
+class ActivityLog {
+
+};
+
+
+#endif //ELABORATO_GOPALAKRISHNAN_ACTIVITYLOG_H
