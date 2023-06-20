@@ -8,4 +8,4 @@
 
 void ActivityList::addActivity(const Activity& activity){
     activities.push_back(activity);
-}i
+}
