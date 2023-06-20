@@ -35,5 +35,24 @@ const string &Activity::getNote() const {
 
 void Activity::setNote(const string &note) {
     Activity::note = note;
+
 }
-i
+
+struct Time Activity::durationOfActivity(){
+    struct Time duration;
+
+    duration.year = end.year - start.year;
+    duration.month = end.month - start.month;
+    duration.day = end.day - start.day;
+    duration.hour = end.hour - start.hour;
+    duration.minutes = end.minutes - start.minutes;
+
+    return duration;
+}
+
+Activity::Activity(const Time &start, const Time &anEnd, const string &title, const string &note){
+    if(durationOfActivity().){
+
+    }
+}
+

@@ -35,12 +35,16 @@ public:
 
     void setNote(const string &note);
 
+    Activity(const Time &start, const Time &anEnd, const string &title, const string &note);
+
+    struct Time durationOfActivity();
+
 private:
         struct Time start;
         struct Time end;
         string title;
         string note;
-};i
+};
 
 
 #endif //ELABORATO_GOPALAKRISHNAN_ACTIVITY_H
