@@ -10,12 +10,18 @@
 using namespace std;
 
 struct Time{
-
     int hour;
     int minutes;
 };
 
 class Activity {
+
+private:
+    Time start;
+    Time end;
+    string title;
+    string note;
+
 public:
     const Time &getStart() const;
 
@@ -37,11 +43,6 @@ public:
 
     int durationOfActivity();
 
-private:
-        struct Time start;
-        struct Time end;
-        string title;
-        string note;
 };
 
 
