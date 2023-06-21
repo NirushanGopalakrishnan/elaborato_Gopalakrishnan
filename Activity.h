@@ -10,9 +10,7 @@
 using namespace std;
 
 struct Time{
-    int day;
-    int month;
-    int year;
+
     int hour;
     int minutes;
 };
@@ -37,7 +35,7 @@ public:
 
     Activity(const Time &start, const Time &anEnd, const string &title, const string &note);
 
-    struct Time durationOfActivity();
+    int durationOfActivity();
 
 private:
         struct Time start;

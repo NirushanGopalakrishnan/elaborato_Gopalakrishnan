@@ -38,21 +38,26 @@ void Activity::setNote(const string &note) {
 
 }
 
-struct Time Activity::durationOfActivity(){
+int Activity::durationOfActivity(){
     struct Time duration;
+    int minutes = 0;
 
-    duration.year = end.year - start.year;
-    duration.month = end.month - start.month;
-    duration.day = end.day - start.day;
     duration.hour = end.hour - start.hour;
     duration.minutes = end.minutes - start.minutes;
 
-    return duration;
+    minutes = (duration.hour * 60) + (duration.minutes);
+
+    return minutes;
 }
 
 Activity::Activity(const Time &start, const Time &anEnd, const string &title, const string &note){
-    if(durationOfActivity().){
-
+    if(durationOfActivity() < 1){
+        printf("ERRORE: durata attività errata");
+    }else{
+        this->start = start;
+        this->end = anEnd;
+        this->title = title;
+        this->note = note;
     }
 }
 
