@@ -13,6 +13,7 @@ class ActivityList {
 
     private:
         std::vector<Activity> activities;
+
 };
 
 
