@@ -6,14 +6,22 @@
 #define ELABORATO_GOPALAKRISHNAN_ACTIVITYLIST_H
 #include <vector>
 #include "Activity.h"
+#include <ctime>
+
+struct DayActivity {
+    int day;
+    int month;
+    int year;
+    std::vector<Activity> activities;
+};
 
 class ActivityList {
-    public:
-        void addActivity(const Activity& activity);
+private:
+    std::vector<DayActivity> daysActivity;
 
-    private:
-        std::vector<Activity> activities;
-
+public:
+    void addActivity(const Activity& activity);
+    void printActivities();
 };
 
 
