@@ -11,7 +11,11 @@ int main() {
     // The next day
 
     Activity activity2({18, 0}, {19, 0}, "titolo", "note");
-    log.addActivity(activity2);
 
-    //log.printActivities();
+    Activity activity3({20, 0}, {21, 0}, "euhfi", "note");
+    log.addActivity(activity1);
+    log.addActivity(activity2);
+    log.addActivity(activity3);
+
+    log.printActivities();
 }

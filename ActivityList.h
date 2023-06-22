@@ -21,7 +21,7 @@ private:
 
 public:
     void addActivity(const Activity& activity);
-    void printActivities();
+    void printActivities() const;
 };
 
 

@@ -2,6 +2,7 @@
 // Created by thabr on 20/06/2023.
 //
 
+#include <iostream>
 #include "Activity.h"
 
 
@@ -37,7 +38,7 @@ void Activity::setNote(const string &note) {
     Activity::note = note;
 
 }
-
+/*
 int Activity::durationOfActivity(){
     struct Time duration;
     int minutes = 0;
@@ -49,15 +50,18 @@ int Activity::durationOfActivity(){
 
     return minutes;
 }
+*/
 
 Activity::Activity(const Time &start, const Time &anEnd, const string &title, const string &note){
-    if(durationOfActivity() < 1){
-        printf("ERRORE: durata attività errata");
+    /*if(durationOfActivity() < 1){
+        std::cout<<"ERRORE: durata attivita errata";
+        std::cout<<durationOfActivity();
     }else{
+        */
         this->start = start;
         this->end = anEnd;
         this->title = title;
         this->note = note;
-    }
+    /*}*/
 }
 

@@ -1,7 +1,7 @@
 //
 // Created by thabr on 20/06/2023.
 //
-
+#include <iostream>
 #include "ActivityList.h"
 #include <vector>
 #include "Activity.h"
@@ -30,5 +30,17 @@ void ActivityList::addActivity(const Activity& activity){
         newDay.year = currentYear;
         newDay.activities.push_back(activity);
         daysActivity.push_back(newDay);
+    }
+}
+
+void ActivityList::printActivities() const {
+    for (const DayActivity& day : daysActivity) {
+        std::cout << "Activities for " << day.month << "/" << day.day << "/" << day.year << ":" << std::endl;
+        for (const Activity& act : day.activities) {
+            std::cout << "title: " << act.getTitle() << std::endl;
+            std::cout << "Start Time: " << act.getStart().hour << ":" << act.getStart().minutes << std::endl;
+            std::cout << "End Time: " << act.getAnEnd().hour << ":" << act.getAnEnd().minutes << std::endl;
+            std::cout << std::endl;
+        }
     }
 }
